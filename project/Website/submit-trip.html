@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html>
+  <head>
+    <title>Submit Weather</title>
+    <link type="text/css" rel="stylesheet" href="/elegant-aero.css" />
+  </head>
+  <!-- Thanks to Mario C. E. Freese <mcefreese@gmail.com> for permission to use background image -->
+  <body style='background-image:URL("Divvy.jpg");background-repeat:no-repeat;background-position:center top;-webkit-background-size:100%;-moz-background-size:100%;-o-background-size:100%;background-size: 100%;'>
+    <p style="margin-bottom:5px"/>
+    <h2 class="elegant-aero" style="margin-left:30%;text-align:center;display:inline-block;color:#5E5E5E;background:#FFFFFF">&nbsp;Submit bike report&nbsp;</h2>
+    <form action="/cgi-bin/submit-bike.pl" style="background:#FFFFFF;width:60%;margin:auto"  method="get" class="elegant-aero">
+      <label> 
+	<span>From Station:</span> <input type="text" name="fromID" value="0"/>
+      </label>
+      <label> 
+	<span>To Station:</span> <input type="text" name="toID" value="0"/>
+      </label>
+      <label> 
+	<span>Day:</span> <input type="number" name="day" value="0"/>
+      </label>
+      <label> 
+	<span>Month:</span> <input type="number" name="month" value="0"/>
+      </label>
+      <label> 
+	<span>Frequency:</span> <input type="number" name="frequency" value="0"/>
+      </label>
+      <label>
+	<span>&nbsp;</span><input type="submit" value="Submit">
+      </label>
+    </form>
+    <iframe frameBorder="0" name="results_iframe" style="width:100%"/>
+  </body>
+</html>
